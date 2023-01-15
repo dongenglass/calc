@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+ <body style="background-color:dimgrey;">
+
+</body> 
+
+<body>
+<p><font face = "Verdana" size = "4" color = "#000000">
+
+<div data-ng-app="" data-ng-init="Length=0;Breadth=0">
+<h2>Fly Screen Price Calculator</h2>
+<p>Height: <input type="number" ng-model="Length"></p>
+<p>Width: <input type="number" ng-model="Breadth"></p>
+<b>Area x1:</b> {{(Length*Breadth)}}
+
+<p>Area: <input type="number" ng-model="Area1"></p>
+<p>Quantity: <input type="number" ng-model="Quantity"></p>
+<b>Total Area:</b> {{(Quantity*Area1)}}
+
+<br>
+<br>
+<p>Total Area: <input type="number" ng-model="TotalArea"></p>
+<br>
+<br>
+
+<h2>Insect Fly Screen</h2>
+<b>Cost:</b> ${{(1.47*TotalArea*3)}}
+
+<h2>Aluminium Fly Screen</h2>
+<b>Cost:</b> ${{(7.50*TotalArea*1.5)}}
+
+</div>
+</body>
+
+</html>
